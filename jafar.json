@@ -1,0 +1,13 @@
+{
+   "type": "flask",
+   "instances": 1,
+   "dockerfile": "Dockerfile",  # Optional Custom dockerfile
+   "services": {
+       "worker": {
+           "type": "celery"
+       },
+       "message_queue": {
+            "type": "rabbitmq"
+       }
+   }
+}
