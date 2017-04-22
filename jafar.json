@@ -4,7 +4,8 @@
    "dockerfile": "Dockerfile",
    "services": {
        "worker": {
-           "type": "celery"
+           "type": "celery",
+           "command":"celery -A tasks"
        },
        "message_queue": {
             "type": "rabbitmq"
